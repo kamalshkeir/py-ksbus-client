@@ -1,7 +1,7 @@
 # Ksbus Python client
 
 ```py
-from ksbus import client
+from ksbus import Bus
 
 
 # pythonTopicHandler handle topic 'python'
@@ -26,5 +26,5 @@ async def onOpen(bus):
     
 
 if __name__ == "__main__":
-    client.Bus("localhost:9313",onOpen=onOpen)
+    Bus("localhost:9313",onOpen=onOpen)
 ```
